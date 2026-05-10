@@ -1,0 +1,23 @@
+#game {
+    width: 900px;
+    height: 300px;
+    border: 3px solid #333;
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
+
+#ground {
+    width: 200%;
+    height: 20px;
+    background: #555;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: groundMove 2s linear infinite;
+}
+
+@keyframes groundMove {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}

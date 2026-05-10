@@ -1,0 +1,28 @@
+#dino {
+    width: 50px;
+    height: 50px;
+    background-image: url('../assets/images/dino/run1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 20px;
+    left: 60px;
+    transition: background 0.1s;
+}
+
+.dino-run-1 {
+    background-image: url('../assets/images/dino/run1.png') !important;
+}
+
+.dino-run-2 {
+    background-image: url('../assets/images/dino/run2.png') !important;
+}
+
+.dino-jumping {
+    background-image: url('../assets/images/dino/jump.png') !important;
+}
+
+.dino-dead {
+    background-image: url('../assets/images/dino/dead.png') !important;
+}

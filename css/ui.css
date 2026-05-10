@@ -1,0 +1,35 @@
+#score {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+    z-index: 10;
+}
+
+#game-over h2 {
+    font-size: 40px;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+#start-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    z-index: 10;
+}

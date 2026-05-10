@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome Dino Game - Modular</title>
+    
+    <!-- CSS Split -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/dino.css">
+    <link rel="stylesheet" href="css/obstacles.css">
+    <link rel="stylesheet" href="css/ui.css">
+</head>
+<body>
+
+    <h1 class="title">Chrome Dino Game</h1>
+
+    <div id="game">
+
+        <div id="score">00000</div>
+
+        <div id="start-message">
+            Appuyez sur ESPACE ou touchez l'écran pour commencer
+        </div>
+
+        <div id="game-over">
+            <h2>GAME OVER</h2>
+            <p>Appuyez sur ESPACE pour recommencer</p>
+        </div>
+
+        <div id="dino"></div>
+
+        <div id="ground"></div>
+
+    </div>
+
+    <!-- Audio assets (placeholders) -->
+    <audio id="jump-sound" src="assets/sounds/jump.wav"></audio>
+    <audio id="hit-sound" src="assets/sounds/hit.wav"></audio>
+    <audio id="score-sound" src="assets/sounds/score.wav"></audio>
+
+    <!-- Main Entry Point -->
+    <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
