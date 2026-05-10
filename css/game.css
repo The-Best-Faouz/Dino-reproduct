@@ -9,10 +9,12 @@
 
 #ground {
     width: 200%;
-    height: 20px;
-    background: #555;
+    height: 12px;
+    background-image: url('../assets/images/background/ground.png');
+    background-repeat: repeat-x;
+    background-size: contain;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 0;
     animation: groundMove 2s linear infinite;
 }

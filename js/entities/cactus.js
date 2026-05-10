@@ -6,6 +6,12 @@ export class Cactus {
         this.speed = speed;
         this.element = document.createElement("div");
         this.element.classList.add("cactus");
+        
+        // Aléatoirement utiliser le deuxième type de cactus
+        if (Math.random() > 0.5) {
+            this.element.classList.add("cactus-2");
+        }
+
         this.left = GAME_WIDTH;
         this.element.style.left = this.left + "px";
         this.gameContainer.appendChild(this.element);

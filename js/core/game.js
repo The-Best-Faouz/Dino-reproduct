@@ -18,7 +18,10 @@ export class Game {
 
         this.dino = new Dino();
         this.ground = new Ground();
-        this.scoreManager = new ScoreManager((speed) => this.ground.setSpeed(speed));
+        this.scoreManager = new ScoreManager((speed) => {
+            this.ground.setSpeed(speed);
+            this.soundManager.play('score');
+        });
         this.obstacleManager = new ObstacleManager(this.container);
         this.soundManager = new SoundManager();
         this.inputManager = new InputManager(() => this.handleAction());
@@ -66,7 +69,7 @@ export class Game {
 
         const currentSpeed = this.scoreManager.getSpeed();
 
-        this.dino.update();
+        this.dino.update(deltaTime);
         this.obstacleManager.update(deltaTime, currentSpeed);
         this.scoreManager.update(deltaTime);
         this.hud.update(this.scoreManager.getScore(), this.scoreManager.getHighScore());
