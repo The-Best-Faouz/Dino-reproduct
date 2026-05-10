@@ -23,3 +23,13 @@
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
 }
+
+.cloud {
+    width: 60px;
+    height: 30px;
+    background-image: url('../assets/images/background/cloud.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+}

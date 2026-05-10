@@ -20,11 +20,11 @@
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    /* Animation de vol simple */
-    animation: birdFlap 0.4s infinite alternate;
+    /* Animation de vol */
+    animation: birdFlap 0.2s steps(1) infinite;
 }
 
 @keyframes birdFlap {
-    from { transform: translateY(0); }
-    to { transform: translateY(-5px); }
+    0% { background-image: url('../assets/images/birds/bird.png'); }
+    50% { background-image: url('../assets/images/birds/bird2.png'); }
 }

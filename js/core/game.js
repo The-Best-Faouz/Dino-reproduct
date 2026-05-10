@@ -49,6 +49,7 @@ export class Game {
         this.isGameOver = false;
         this.startScreen.hide();
         this.ground.setSpeed(this.scoreManager.getSpeed());
+        this.soundManager.startMusic();
         this.loop.start();
     }
 
@@ -61,6 +62,7 @@ export class Game {
         this.dino.reset();
         this.ground.resume();
         this.ground.setSpeed(this.scoreManager.getSpeed());
+        this.soundManager.startMusic();
         this.loop.start();
     }
 
@@ -85,6 +87,7 @@ export class Game {
         this.dino.die();
         this.ground.pause();
         this.gameOverScreen.show();
+        this.soundManager.stopMusic();
         this.soundManager.play('hit');
     }
 }
